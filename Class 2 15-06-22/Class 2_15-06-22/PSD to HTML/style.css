@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#whatido{
+    background-image: url();
+    text-align: center;
+    color: rgb(31, 29, 29);
+    margin: 50px 20%;
+}
+#whatido p{
+    font-size: 20px;
+}
+#whatido h4{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+#whatido .row{
+    margin-top: 20px;
+}
+#whatido .row .col{
+    width: 31%;
+    float: left;
+    margin: 1%;
+}
+#whatido .row .col h5{
+    text-align: left;
+    font-size: 15px;
+}
+#whatido .row .col p{
+    text-align: left;
+    font-size: 12px;
+}
