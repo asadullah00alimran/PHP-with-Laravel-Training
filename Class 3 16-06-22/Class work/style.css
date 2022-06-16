@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 5% 20%;
+}
+
+header{
+    background: #23232e;
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+}
+header img{
+    width: 7%;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+header p{
+    font-size: 12px;
+    margin-top: 30px;
+}
+header i{
+    font-size: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 6px;    
+    margin-top: 100px;
+}
+
+.what-i-do{
+    background: url(images/bg.png);
+}
+ .what-i-do p{
+    font-size: 16px;
+    text-align: center;
+}
+.what-i-do .row{
+    float: left;
+}
+.what-i-do .row .col{
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+.what-i-do .row .col h3{
+    text-align: left;
+}
+.what-i-do .row .col p{
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 720px){
+    .container{
+        margin: 5% 17%;
+    }
+    header img{
+        width: 12%;
+    }
+    header h2{
+        font-size: 33px;
+    }
+    header i{
+        margin-top: 70px;
+    }
+    .what-i-do .row .col {
+        width: 100%;  
+    }
+    .what-i-do p{
+        text-align: justify;
+    }
+
+}
+
+@media all and (max-width: 480px){
+    .container{
+        margin: 5% 15%;
+    }
+    header img{
+        width: 15%;
+    }
+    header h2{
+        font-size: 35px;
+    }
+    header i{
+        margin-top: 50px;
+    }
+    .what-i-do p{
+        text-align: justify;
+    }
+    .what-i-do .row .col {
+        width: 100%;  
+    }
+}
