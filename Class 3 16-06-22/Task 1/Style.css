@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common Properties*/
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.left-right-margine {
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.col {
+  flex-basis: 31%;
+  margin: 1.2%;
+}
+
+/* Header Section */
+header {
+  background: #23232e;
+  color: white;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+header img {
+  width: 7%;
+}
+
+header p {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+header i {
+  font-size: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px 6px;
+  margin-top: 100px;
+}
+
+/* What I Do Section */
+.what-i-do {
+  background: url(images/back.png);
+}
+
+.what-i-do p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.what-i-do .row .col h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-align: left;
+}
+
+.what-i-do .row .col p {
+  text-align: justify;
+  font-size: 13px;
+}
+
+/* My Work Section */
+.my-work {
+  background: #23232e;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 30px 0px;
+}
+
+.my-work .left-right-margine .menu {
+  text-align: center;
+  width: 100%;
+}
+
+.my-work .left-right-margine .menu ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+.my-work .left-right-margine .menu ul li {
+  padding: 20px;
+}
+
+.my-work .left-right-margine .menu ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.row .col img {
+  width: 100%;
+}
+
+.row .col p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.row .col small {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+.btn-row {
+  width: 100%;
+  display: inline-block;
+}
+
+button {
+  background: #7b77c9;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Photography Section*/
+.photography {
+  margin-bottom: 30px;
+}
+
+.photography p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/*Subscription Section*/
+.subscription {
+  align-items: center;
+  background: #23232e;
+  color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.subscription img {
+  padding: 20px;
+}
+
+.subscription p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.subscription input {
+  margin-right: 10px;
+  padding: 8px;
+  padding-right: 100px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*Footer Section*/
+
+footer {
+  background: url(images/back.png);
+  padding: 50px 0px;
+  text-align: center;
+  color: rgb(179, 179, 179);
+}
+
+footer .contact-icon i {
+  margin: 30px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+}
+
+
+/* Respnsive Section*/
+
+/* For 720px Devices*/
+@media all and (max-width: 720px) {
+
+  /*Responsive Header Section for 720px devices */
+  header img {
+    width: 12%;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  header i {
+    margin-top: 50px;
+  }
+
+  /*Responsive What I Do Section for 720px devices */
+  .what-i-do .row {
+    width: 100%;
+    display: inline-block;
+  }
+
+  /*Responsive What I Do Section for 720px devices */
+
+  .my-work .left-right-margine .menu {
+    width: 100%;
+    text-align: left;
+  }
+
+  .my-work .left-right-margine .menu ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0%;
+  }
+
+  .my-work .left-right-margine .menu ul a {
+    font-size: 10px;
+  }
+}
+
+/* For 480px Devices*/
+@media all and (max-width: 480px) {
+
+  /*Responsive Header Section for 480px devices */
+  header img {
+    width: 15%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  header i {
+    margin-top: 50px;
+  }
+}
+
+/* For 360px Devices*/
+@media all and (max-width: 360px) {
+
+  /*Responsive Header Section for 360px devices */
+  header img {
+    width: 15%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  header i {
+    margin-top: 40px;
+  }
+}
