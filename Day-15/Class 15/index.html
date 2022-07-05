@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Age Calculator</h1>
+    </nav>
+
+    <div class="b-table">
+        <table>
+            <tr>
+                <td>Date of Birth </td>
+                <td><input type="text" id="birthYear" placeholder="Enter Birth Year"></td>
+                <td><input type="text" id="birthMonth" placeholder="Enter Birth Month"></td>
+                <td><input type="text" id="birthDate" placeholder="Enter Birth Day"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">Year</td>
+                <td>Month</td>
+                <td>Day</td>
+            </tr>
+            <tr>
+                <td>Your Age </td>
+                <td><input type="text" id="ageYear"></td>
+                <td><input type="text" id="ageMonth"></td>
+                <td><input type="text" id="ageDate"></td>
+            </tr>
+            <tr></tr>
+        </table>
+
+    </div>
+
+    <input type="button" value="Get Age" onclick="calculateAge()">
+    <input type="date" id="check">
+    <input type="button" value="Get Year" onclick="ck()">
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
