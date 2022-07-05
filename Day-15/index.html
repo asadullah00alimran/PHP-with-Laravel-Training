@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<table border="1">
+		<tr>
+			<th>Sl. No</th>
+			<th>Subject Name</th>
+			<th>Subject Code</th>
+			<th>Theury Mark</th>
+			<th>Practical Mark</th>
+			<th>Total Mark</th>
+			<th>Grad</th>
+			<th>Point</th>
+			<th>Action</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>Bangla Frist Pepar</td>
+			<td>1001</td>
+			<td>
+				<input type="text" id="tm" value="0">
+			</td>
+			<td>
+				<input type="text" id="pm" value="0">
+			</td>
+			<td>
+				<input type="text" id="ttm">
+			</td>
+			<td>
+				<input type="text" id="grad">
+			</td>
+			<td>
+				<input type="text" id="point">
+			</td>
+			<td>
+				<input type="button" onclick="result1()" value="Get Result">
+			</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Bangla Second Pepar</td>
+			<td>1002</td>
+			<td>
+				<input type="text" id="tm1" value="0">
+			</td>
+			<td>
+				<input type="text" id="pm1" value="0">
+			</td>
+			<td>
+				<input type="text" id="ttm1">
+			</td>
+			<td>
+				<input type="text" id="grad1">
+			</td>
+			<td>
+				<input type="text" id="point1">
+			</td>
+			<td>
+				<input type="button" onclick="result2()" value="Get Result">
+			</td>
+		</tr>
+
+		<tr>
+			<td>03</td>
+			<td>English 1st Pepar</td>
+			<td>1003</td>
+			<td>
+				<input type="text" id="tm2" value="0">
+			</td>
+			<td>
+				<input type="text" id="pm2" value="0">
+			</td>
+			<td>
+				<input type="text" id="ttm2">
+			</td>
+			<td>
+				<input type="text" id="grad2">
+			</td>
+			<td>
+				<input type="text" id="point2">
+			</td>
+			<td>
+				<input type="button" onclick="result3()" value="Get Result">
+			</td>
+		</tr>
+		<tr><th colspan="9"><hr style="background: red; height: 1px; border: none;" ></th></tr>
+		<tr>
+			<td colspan="5">Total Calculation</td>
+			<td>
+				<input type="text" id="totalMark">
+			</td>
+			<td>
+				<input type="text" id="totalgrade">
+			</td>
+			<td>
+				<input type="text" id="totalPoint">
+			</td>
+			<td>
+				<input type="button" value="Result" onclick="finalResult()">
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<table>
+		<tr>
+			
+			<th colspan="2">Year</th>
+			<th>Month</th>
+			<th>Date</th>
+		</tr>
+		<tr>
+			<th>To Date</th>
+			<td><input type="text" id="tyear"></td>
+			<td><input type="text" id="tmonth"></td>
+			<td><input type="text" id="tday"></td>
+		</tr>
+		<tr>
+			<th>Birth Date</th>
+			<td>
+				<input type="text" id="byear">
+			</td>
+			<td>
+				
+				<input type="text" id="bmonth">
+			</td>
+			<td>
+				<select id="bday">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="25">25</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>Cal Date</th>
+			<td>
+				<input type="text" id="cyear">
+			</td>
+			<td>
+				
+				<input type="text" id="cmonth">
+			</td>
+			<td>
+				
+				<input type="text" id="cday">
+			</td>
+		</tr>
+		<input type="button" value="OK" onclick="calculation()">
+	</table>
+
+	<script>
+		
+
+
+		var date = new Date();
+		var _tm=date.getMonth()+1;
+		var _td =date.getDate();
+		var _ty=date.getFullYear();
+		document.getElementById('tyear').value=_ty;
+		document.getElementById('tmonth').value=_tm;
+		document.getElementById('tday').value=_td;
+
+		function calculation(){
+			var _byear=document.getElementById("byear").value;
+			var _bmonth=document.getElementById("bmonth").value;
+			var _bday=document.getElementById("bday").value;
+			var _cday, _cmonth,_cyear;
+			
+			if(_td < _bday){
+				
+				_cday =((_td+30)-_bday);
+				document.getElementById('cday').value=_cday;
+				_tm=(_tm-1);
+
+				if (_tm < _bmonth) {
+					_cmonth =((_tm+12)-_bmonth);
+					document.getElementById('cmonth').value=_cmonth;
+					_cyear=((_ty-1)-_byear);
+					document.getElementById('cyear').value=_cyear;
+				}
+				else{
+					_cmonth =_tm-_bmonth;
+					document.getElementById('cmonth').value=_cmonth;
+					_cyear=_ty-_byear;
+					document.getElementById('cyear').value=_cyear;
+				}
+			}
+
+			else if (_tm < _bmonth) {
+
+				_cday =_td-_bday;
+				document.getElementById('cday').value=_cday;
+				
+				_cmonth =((_tm+12)-_bmonth);
+				document.getElementById('cmonth').value=_cmonth;
+
+				_cyear=((_ty-1)-_byear);
+				document.getElementById('cyear').value=_cyear;
+			}
+
+			else{
+				_cday =_td-_bday;
+				document.getElementById('cday').value=_cday;
+
+				_cmonth =_tm-_bmonth;
+				document.getElementById('cmonth').value=_cmonth;
+
+				_cyear=_ty-_byear;
+				document.getElementById('cyear').value=_cyear;
+			}
+		}
+	</script>
+
+
+
+	<script src="script.js"></script>
+	
+</body>
+</html>
