@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.row-1{
+    background: rgb(216, 214, 214);
+    padding: 5% 10%;
+}
+.row-1 h1{
+    margin-bottom: 40px;
+}
+.row-1 tr{
+    margin: 10px 0;
+}
+.input-box{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.btn{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(44, 42, 42);
+    color: white;
+    border: none;
+}
+.bmi{
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.bmi span{
+    background: rgb(216, 214, 214);
+    padding: 20px 30px;
+}
+.bmi-input{
+    background-color: green;
+    padding: 20px 30px;
+    color: white;
+    font-size: 14px;
+}
+
+

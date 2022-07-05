@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row-1">
+        <h1>BMI Calculator</h1>
+        <table>
+            <tr>
+                <td>Weight</td>
+                <td colspan="2"><input type="text"id="weight" placeholder="Enter weight(KG)" class="input-box"> 
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td><input type="text" id="heightFeet" placeholder="Feet" class="input-box"></td>
+            </tr>
+            <tr>
+                <td><td><input type="text" id="heightInchi" placeholder="Inchi" class="input-box"></td></td>
+            </tr>
+            <tr>
+                <td><td><input type="button" value="OK" class="btn" onclick="bmiCalculator(), addStyleBmi()"></td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bmi">
+        <Span>Your BMI:</Span>
+        <input type="text" id="bmi" class="input-box">
+        <input type="text" id="sugg" class="input-box">
+        <!-- <Span id="bellowBmi">Below 18.5 <br> Underweight</Span> -->
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
