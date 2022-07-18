@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: purple;
+}
+.open,
+.close{
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+nav ul li{
+    display: inline-block;
+    justify-content: space-around;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+nav ul ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0;
+}
