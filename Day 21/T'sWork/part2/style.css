@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	background: #2F0264;
+	color: white;
+}
+.open,
+.close{
+	text-align: center;
+	padding: 10px 0;
+}
+
+.menu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu > ul > li{
+	display: inline-block;
+	position: relative;
+}
+
+.menu ul li a{
+	color: white;
+	padding: 13px 30px;
+	display: inline-block;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.menu ul ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #180134;
+	display: none;
+	
+}
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.top{
+	background: red;
+	padding: 15px;
+	border-radius: 15px 15px 0 0;
+	display: inline-block;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
