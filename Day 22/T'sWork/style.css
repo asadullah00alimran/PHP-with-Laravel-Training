@@ -1,0 +1,304 @@
+body{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.mobile-menu{
+	display: none;
+	position: fixed;
+	top: 1%;
+	left: 3%;
+	z-index: 999;
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+	background: linear-gradient(145deg, #563333, #482b2b);
+	box-shadow:  6px 6px 13px #352020,
+	             -6px -6px 13px #6b4040;
+}
+.mobile-menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.mobile-menu ul li{
+	display: inline-block;
+	padding: 12px 5px;
+	color: white;
+}
+.mobile-menu ul li a{
+	color: white;
+	text-decoration: none;
+	padding-left: 3px;
+}
+nav{
+	width: 6%;
+	height: 100%;
+	margin: 0 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+nav .menu{
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px 0;
+	background: linear-gradient(145deg, #9f62a4, #86538a);
+	box-shadow:  5px 5px 5px #855288,
+             -5px -5px 5px #a566aa;
+}
+nav .menu ul li{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav .menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav .menu ul li a{
+	padding: 5px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	transition: .5s;
+}
+nav .menu ul li a:hover{
+	color: rgba(0, 0, 0, .5);
+
+}
+nav .menu ul li a i{
+	font-size: 23px;
+	padding: 5px 0;
+}
+nav .menu .menu-hr{
+	border: none;
+	height: 1px;
+	background: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(0, 0, 0, .8));
+}
+.profile{
+	width: 36%;
+	height: 100%;
+	margin: 0 2%;
+	box-shadow: 2px 2px 5px gray;
+	float: left;
+}
+.profile .back{
+	height: 50%;
+	background: url("images/back.jpg");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.profile .back .pic{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-70%);
+
+}
+.profile .back::after{
+	content: '';
+	clear: both;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	border-bottom: 100px solid white;
+	border-left: 0 solid transparent;
+	border-right: 310px solid transparent;
+}
+.profile .back::before{
+	content: '';
+	display: block;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	border-bottom: 100px solid white;
+	border-left: 310px solid transparent;
+	border-right: 0 solid transparent;
+}
+.profile .back .pic img{
+	width: 100%;
+	height: 190px;
+	border-radius: 50%;
+	border: 5px solid rgba(0, 0, 0, .5);
+}
+.profile .text{
+	margin-top: 40px;
+	text-align: center;
+}
+.profile .text button{
+	padding: 10px 15px;
+	width: 40%;
+	border: none;
+	margin: 0 10px;
+	border-radius: 3px;
+	background: linear-gradient(145deg, #a5a3a5, #8b898b);
+	box-shadow:  5px 5px 6px #7d7b7d,
+             -5px -5px 6px #b7b5b7;
+
+}
+.profile .text .social ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.profile .text .social ul li{
+	display: inline-block;
+}
+.profile .text .social ul i{
+	padding: 8px;
+	margin: 5px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+	font-size: 20px;
+	transition: .5s;
+}
+.profile .text .social ul i:hover{
+	color: white;
+	background: rgba(0, 0, 0, .8);
+}
+.content{
+	width: 46%;
+	height: 96%;
+	margin: 1%;
+	float: left;
+}
+.content .home{
+	height: 95%;
+	width: 40%;
+	background: red;
+	position: absolute;
+	left: 50%;
+	opacity: 1;
+	overflow: auto;
+	padding: 10px;
+}
+.content .about{
+	height: 95%;
+	width: 40%;
+	background: green;
+	position: absolute;
+	left: 9%;
+	opacity: 0;
+	overflow: auto;
+	padding: 10px;
+}
+.content .contact{
+	height: 95%;
+	width: 40%;
+	background: green;
+	position: absolute;
+	left: 9%;
+	opacity: 0;
+	overflow: auto;
+	padding: 10px;
+}
+.content .service{
+	height: 95%;
+	width: 40%;
+	background: green;
+	position: absolute;
+	left: 9%;
+	opacity: 0;
+	overflow: auto;
+	padding: 10px;
+}
+.content .portfolio{
+	height: 95%;
+	width: 40%;
+	background: green;
+	position: absolute;
+	left: 9%;
+	opacity: 0;
+	overflow: auto;
+	padding: 10px;
+}
+.top{
+	padding: 30px;
+	border-radius: 10px 10px 0 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: yellow;
+	z-index: 999;
+	display: none;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	background: white;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px red; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .5); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+@media all and (max-width: 768px){
+	body{
+		overflow: auto;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	nav{
+		display: none;
+	}
+	.profile{
+		margin-top: 65px;
+		width: 100%;
+	}
+	.content{
+		margin-top: 65px;
+		width: 100%;
+	}
+	.content .home{
+		position: inherit;
+		width: 80%;
+		margin: auto;
+	}
+	.content .about{
+		position: inherit;
+		opacity: 1;
+		width: 80%;
+		margin: 20px auto;
+	}
+	.content .contact{
+		position: inherit;
+		opacity: 1;
+		width: 80%;
+		margin: 20px auto;
+	}
+	.content .service{
+		position: inherit;
+		opacity: 1;
+		width: 80%;
+		margin: 20px auto;
+	}
+	.content .portfolio{
+		position: inherit;
+		opacity: 1;
+		width: 80%;
+		margin: 20px auto;
+	}
+	.profile{
+		height: 70%;
+	}
+	.top{
+		display: block;
+	}
+}
