@@ -1,0 +1,7 @@
+//Downloadee (from github) Laravel Project Setup command 
+
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan optimize
+php artisan optimize
