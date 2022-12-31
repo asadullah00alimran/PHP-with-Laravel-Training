@@ -1,6 +1,8 @@
 //Downloadee (from github) Laravel Project Setup command 
 
 composer install
+or
+composer install --ignore-platform-reqs
 php artisan key:generate
 php artisan migrate
 php artisan optimize
